@@ -33,7 +33,7 @@
     <td><?php echo $row->firstname; ?></td>
     <td><?php echo $row->lastname ?></td>
     <td><?php echo $row->email; ?></td>
-    <td><a href=<?php echo $directory;?>>Visit W3Schools</a>
+    <td><a href=<?php echo $directory;?>?>Index to Invoices</a>
 </td>
     </tr> 
     
