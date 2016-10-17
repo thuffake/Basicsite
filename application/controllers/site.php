@@ -68,7 +68,19 @@ class Site extends CI_Controller {
 		$this->load->library("form_validation");
 		$this->form_validation->set_rules('firstname', 'First Name', 'trim|required');
 		$this->form_validation->set_rules('lastname', 'Last Name', 'trim|required');
+		$this->form_validation->set_rules('address1', 'Primary Address', 'trim|required');
+		$this->form_validation->set_rules('address2', 'Address 2', 'trim');
+		$this->form_validation->set_rules('city', 'City', 'trim|required');
+		$this->form_validation->set_rules('state', 'State', 'trim|required');
+		$this->form_validation->set_rules('zip', 'Zip Code', 'trim|required');
+		$this->form_validation->set_rules('phone', 'Phone', 'trim|required');
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+		$this->form_validation->set_rules('companyname', 'Company Name', 'trim|required');
+		$this->form_validation->set_rules('companyaddress', 'Company Address', 'trim|required');
+		$this->form_validation->set_rules('companycity', 'Company City', 'trim|required');
+		$this->form_validation->set_rules('companystate', 'Company State', 'trim|required');
+		$this->form_validation->set_rules('companyzip', 'Company Zip Code', 'trim|required');
+		$this->form_validation->set_rules('companyphone', 'Company Phone', 'trim|required');
 		$this->load->library('recaptcha');
 		$this->recaptcha->recaptcha_check_answer();
 		

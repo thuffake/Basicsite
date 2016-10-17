@@ -13,6 +13,10 @@ body,html {
 			text-decoration:none;
 		}
 		
+		table {
+		width: 500px; 
+		}
+		
 		#nav{
 			margin:50px auto 0 auto;
 			width: 1000px;
@@ -44,14 +48,37 @@ body,html {
 			min-height:100%;
 			margin: 0 auto;
 			padding: 20px;
+			
 		}
 		
+		table, th, td {
+    border: 1px solid black;
+    padding: 4px;
+}
+		
 		#submit{
-			width:200px;
+			width:300px;
 			min-height:100%;
 			margin: 0 auto;
 			padding: 20px;
+            clear: both;
+
+			
 		}
+		
+		#submit input  {
+        width: 100%;
+        clear: both;
+        
+    }
+    
+    #submit select  {
+        width: 100%;
+        clear: both;
+        
+    }
+    
+    
 		
 		#footer{
 			width:400px;

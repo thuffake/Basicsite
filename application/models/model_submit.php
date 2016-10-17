@@ -26,13 +26,38 @@
 			
 			$firstname=$this->input->post('firstname');
 			$lastname=$this->input->post('lastname');
+			$address1=$this->input->post('address1');
+			$address2=$this->input->post('address2');
+			$city=$this->input->post('city');
+			$state=$this->input->post('state');
+			$zip=$this->input->post('zip');
+			$phone=$this->input->post('phone');
 			$email=$this->input->post('email');
+			$companyname=$this->input->post('companyname');
+			$companyaddress=$this->input->post('companyaddress');
+			$companycity=$this->input->post('companycity');
+			$companystate=$this->input->post('companystate');
+			$companyzip=$this->input->post('companyzip');
+			$companyphone=$this->input->post('companyphone');
 			$approved = 'A';
 			
-			$sql="INSERT INTO users(firstname, lastname,email,approved) 
+			$sql="INSERT INTO users(firstname,lastname,address1,address2,city,state,zip,phone,email,companyname,
+			companyaddress,companycity,companystate,companyzip,companyphone,approved) 
 				VALUES ('".$firstname."',
 						'".$lastname."',
+						'".$address1."',
+						'".$address2."',
+						'".$city."',
+						'".$state."',
+						'".$zip."',
+						'".$phone."',
 						'".$email."',
+						'".$companyname."',
+						'".$companyaddress."',
+						'".$companycity."',
+						'".$companystate."',
+						'".$companyzip."',
+						'".$companyphone."',
 						'".$approved."')";
 						
 			$this->db->query($sql);
